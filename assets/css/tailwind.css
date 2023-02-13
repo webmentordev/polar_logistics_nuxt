@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+.links {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+}
+
+header{
+    background-image: url('../images/header.jpg');
+    @apply bg-cover bg-center;
+}
+
+.h-animate{
+    transition: 0.5s ease;
+}
+
+.h-animate:hover{
+    letter-spacing: 10px;
+    transition: 0.5s ease;
+}
+
+@keyframes goUp {
+    from{
+        transform: scale(0.6);
+        opacity: 0.6;
+    }to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slide {
+    0%{
+        transform: translateX(-500px);
+    }50%{
+        transform: translateX(500px);
+    }100%{
+        transform: translateX(-500px);
+    }
+}
+
+.slider{
+    animation: slide 30s infinite;
+}
+
+.fadingUp-1{
+    animation: goUp 500ms linear;
+}
+.fadingUp-2{
+    animation: goUp 700ms linear;
+}
+
+.contact{
+    background-image: url('../images/contact-bottom.png');
+    @apply bg-center bg-cover;
+}
