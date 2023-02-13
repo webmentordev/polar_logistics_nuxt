@@ -12,6 +12,10 @@ h3,
     font-weight: 500;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     background-image: url('../images/header.jpg');
     @apply bg-cover bg-center;
@@ -39,11 +43,11 @@ header{
 
 @keyframes slide {
     0%{
-        transform: translateX(-500px);
+        transform: translateX(-600px);
     }50%{
-        transform: translateX(500px);
+        transform: translateX(600px);
     }100%{
-        transform: translateX(-500px);
+        transform: translateX(-600px);
     }
 }
 
